@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>SVG Loaders</title>
+		<meta name="author" content="knight_max">
+		<meta name="description" content="SVG Loaders">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css" />
+		<!--<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300" />-->
+	</head>
+	<body>
+		<div id="loaders">
+			<h1>Now loading...</h1>
+			<svg id="loading-bars" width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00BBFF">
+				<title>Bars loader</title>
+				<desc>A loader SVG with bars</desc>
+				<defs>
+					<g id="bar">
+						<rect x="28" y="0" width="8" height="16" fill-opacity="1" />
+					</g>
+				</defs>
+				<use xlink:href="#bar">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(30,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.083" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(60,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.166" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(90,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.249" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(120,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.332" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(150,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.415" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(180,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.498" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(210,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.581" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(240,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.664" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(270,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.747" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(300,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.83" />
+				</use>
+				<use xlink:href="#bar" transform="rotate(330,32,32)">
+					<animate attributeName="opacity" from="1" to=".1" dur="1s" repeatCount="indefinite" begin="0.913" />
+				</use>
+			</svg>
+			<svg id="loading-k2000" width="200" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#AC2611">
+				<title>K2000 loader</title>
+				<desc>A loader for Michael Knight</desc>
+				<rect x="8" y="28" width="192" height="8" fill-opacity="1" >
+				</rect>
+				<rect x="8" y="28" width="32" height="8" fill-opacity="1" fill="#FF0000">
+					<animateTransform attributeName="transform" type="translate" values="0 0; 160 0; 0 0; 0 0" dur="1.5s" begin="0.1s" repeatCount="indefinite" keytimes="0;0.3;0.6;1" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" calcMode="spline" />
+				</rect>
+			</svg>
+			<svg id="loading-grow" width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00FF2E">
+				<title>Grow loader</title>
+				<desc>A loader SVG that grow</desc>
+				<rect x="12" y="24" width="8" height="16" fill-opacity="1">
+					<animateTransform attributeName="transform" type="translate" values="0 0; 0 -32; 0 0; 0 0; 0 0; 0 0; 0 0; 0 0; 0 0" dur="1.5s" begin="0s" repeatCount="indefinite" keytimes="0;0.125;0.250;0.375;0.5;0.625;0.750;0.875;1" additive="sum" />
+					<animateTransform attributeName="transform" type="scale" values="1 1; 1 2; 1 1; 1 1; 1 1; 1 1; 1 1; 1 1; 1 1" dur="1.5s" begin="0s" repeatCount="indefinite" keytimes="0;0.125;0.250;0.375;0.5;0.625;0.750;0.875;1" additive="sum" />
+				</rect>
+				<rect x="28" y="24" width="8" height="16" fill-opacity="1">
+					<animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 0 0; 0 0; 0 -32; 0 0; 0 0; 0 0; 0 0" dur="1.5s" begin="0s" repeatCount="indefinite" keytimes="0;0.125;0.250;0.375;0.5;0.625;0.750;0.875;1" additive="sum" />
+					<animateTransform attributeName="transform" type="scale" values="1 1; 1 1; 1 1; 1 1; 1 2; 1 1; 1 1; 1 1; 1 1" dur="1.5s" begin="0s" repeatCount="indefinite" keytimes="0;0.125;0.250;0.375;0.5;0.625;0.750;0.875;1" additive="sum" />
+				</rect>
+				<rect x="44" y="24" width="8" height="16" fill-opacity="1">
+					<animateTransform attributeName="transform" type="translate" values="0 0; 0 0; 0 0; 0 0; 0 0; 0 0; 0 0; 0 -32; 0 0" dur="1.5s" begin="0s" repeatCount="indefinite" keytimes="0;0.125;0.250;0.375;0.5;0.625;0.750;0.875;1" additive="sum" />
+					<animateTransform attributeName="transform" type="scale" values="1 1; 1 1; 1 1; 1 1; 1 1; 1 1; 1 1; 1 2; 1 1" dur="1.5s" begin="0s" repeatCount="indefinite" keytimes="0;0.125;0.250;0.375;0.5;0.625;0.750;0.875;1" additive="sum" />
+				</rect>
+			</svg>
+			<svg id="loading-circle" width="64" height="64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#00FF2E">
+				<title>Circle loader</title>
+				<desc>Around the loader</desc>
+				<path 	style="fill:none;stroke:#000000;stroke-width:1.41115963;stroke-opacity:1"
+						id="path4183"
+						type="arc"
+						cx="32"
+						cy="32"
+						rx="31"
+						ry="31"
+						start="1"
+						end="6"
+						d="M 32,63 A 32,31 0 0 1 1,34 31,31 0 0 1 28,1 31,31 0 0 1 63,25 l -31,7 z" />
+			</svg>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>
