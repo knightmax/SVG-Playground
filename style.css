@@ -1,0 +1,46 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font-family: inherit;
+    font-feature-settings: inherit;
+    font-kerning: inherit;
+    font-language-override: inherit;
+    font-size: 100%;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-synthesis: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html, body {
+    color: #222;
+    font-family: "Lato",helvetica,arial,sans-serif;
+    font-size: 16px;
+}
+.clear {
+    clear: both;
+}
+
+#loaders {
+    margin: 30px auto;
+    max-width: 800px;
+    width: 90%;
+}
+
+h1 {
+    font-family: "Rokkitt",Helvetica,Arial,sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+	text-align: center;
+}
+
+svg {
+	margin: 50px;
+}
